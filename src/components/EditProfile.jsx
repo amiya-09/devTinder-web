@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import UserCard from "./UserCard";
 import { BASE_URL } from "../utils/constants";
 import axios from "axios";
