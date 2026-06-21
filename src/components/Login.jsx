@@ -31,6 +31,14 @@ const Login = () => {
     }
   };
 
+  const handlePassword = async () => {
+    try {
+      const res = await axios.post(BASE_URL+"/forgot-password", )
+    } catch (err) {
+
+    }
+  }
+
   return (
     <div className="flex justify-center my-10">
       <div className="card bg-base-100 w-96 shadow-sm">
@@ -60,6 +68,9 @@ const Login = () => {
           <div className="card-actions justify-center">
             <button className="btn btn-primary" onClick={handleLogin}>
               Login
+            </button>
+            <button className="btn" onClick={handlePassword}>
+              Forgot Password
             </button>
           </div>
         </div>
